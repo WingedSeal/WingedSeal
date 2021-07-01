@@ -1,0 +1,2 @@
+- I have no idea what GitHub is or how to use it.
+- I have no idea what I'm doing.
