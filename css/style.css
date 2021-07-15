@@ -1,0 +1,164 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&family=Roboto:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato&family=Roboto:wght@400;700&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.index-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100vw;
+  height: calc(100vh*120/1080);
+  background-color: #373737;
+}
+
+.index-header .title {
+  -ms-flex-preferred-size: 65vw;
+      flex-basis: 65vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.index-header .title__img {
+  width: 8vh;
+  border-radius: 100%;
+  border: 0.5vh solid #FFFFFF;
+  margin-left: 7vw;
+}
+
+.index-header .title__text {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  color: #FFFFFF;
+  letter-spacing: 0.3vw;
+  margin: 0 1em;
+  font-family: 'Roboto', sans-serif;
+  font-size: clamp(0.2rem, 2vw, 5rem);
+}
+
+.index-header__navigation ul {
+  -ms-flex-preferred-size: 35vw;
+      flex-basis: 35vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  list-style: none;
+}
+
+.index-header__navigation ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.index-header__navigation ul li .nav-link {
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  line-height: 10vh;
+  height: calc(100vh*120/1080);
+  padding: 0 1em;
+  font-family: 'Lato', sans-serif;
+  font-size: clamp(0.7rem, 1vw, 4rem);
+  color: #FFFFFF;
+  background-color: #373737;
+  border: none;
+  white-space: nowrap;
+}
+
+.index-header__navigation ul li .nav-link:hover {
+  font-weight: 700;
+  -webkit-transform: translateY(-0.2em);
+          transform: translateY(-0.2em);
+}
+
+.index-header__navigation ul li #home {
+  background-color: #707070;
+  text-decoration: underline;
+}
+
+.welcome {
+  height: calc(100vh*(1 - 120/1080));
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("../../img/bg-img.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../img/bg-img.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.welcome__image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -ms-flex-preferred-size: 50vw;
+      flex-basis: 50vw;
+}
+
+.welcome__image .minecraft-avatar {
+  margin: auto clamp(1em, 5vw, 20em) auto auto;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: clamp(1em, 20vw, 50em);
+}
+
+.welcome__texts {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  height: 30%;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -ms-flex-preferred-size: 50vw;
+      flex-basis: 50vw;
+}
+
+.welcome__texts .text-header {
+  color: #FFFFFF;
+  font-size: clamp(1rem, 2vw, 7rem);
+  font-family: 'Lato', sans-serif;
+}
+
+.welcome__texts .text-default {
+  margin-top: 2vh;
+  color: #FFFFFF;
+  font-size: clamp(1rem, 2vw, 7rem);
+  font-family: 'Lato', sans-serif;
+}
+
+.welcome__texts .highlight {
+  color: #FFAA00;
+}
+/*# sourceMappingURL=style.css.map */

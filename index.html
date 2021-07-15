@@ -5,21 +5,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WingedSeal</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
 <header>
-    <div class="header">
+    <div class="index-header">
         <div class="title">
-            <img src="" alt="WingedSeal's icon" class="title__img">
+            <img src="img/wingedseal-icon.jpg" alt="WingedSeal's icon" class="title__img">
             <h2 class="title__text">WingedSeal</h2>
         </div>
-        <nav class="header__navigation">
+        <nav class="index-header__navigation">
             <ul>
-                <li><button type="button" onclick="" class="nav-button">Home</button></li>
-                <li><button type="button" onclick="" class="nav-button">About me</button></li>
-                <li><button type="button" onclick="" class="nav-button">My skills</button></li>
-                <li><button type="button" onclick="" class="nav-button">Projects</button></li>
+                <li><a type="button" class="nav-link" id="home">Home</a></li>
+                <li><a type="button" class="nav-link" id="about-me">About me</a></li>
+                <li><a type="button" class="nav-link" id="my-skills">My skills</a></li>
+                <li><a type="button" class="nav-link" id="projects">Projects</a></li>
             </ul>
         </nav>
     </div>
@@ -27,18 +28,18 @@
 
 <main>
     <section class="welcome">
-        <div class="welcome-container">
-            <img src="" alt="minecraft-avatar" class="minecraft-avatar">
-            <div class="welcome-container__texts">
-                <h3 class="text-header">Hello there,</h3>
-                <p class="text-default">I'm <span class="highlight">Firm</span>,</p>
-                <p class="text-default">also known as <span class="highlight">WingedSeal</span></p>
-            </div>
+        <div class="welcome__image">
+            <img src="img/minecraft-avatar.png" alt="minecraft-avatar" class="minecraft-avatar">
+        </div>
+        <div class="welcome__texts">
+            <h3 class="text-header">Hello there,</h3>
+            <p class="text-default">I'm <span class="highlight">Firm</span>,</p>
+            <p class="text-default">also known as <span class="highlight">WingedSeal</span>.</p>
         </div>
     </section>
 
     <section class="intro">
-        <div class="intro-container">
+        <div class="intro__container">
             <div class="intro-container__texts">
                 <h3 class="text-header">WingedSeal</h3>
                 <h4 class="text-subheader">A  gamer who happens to enjoy programming</h3>
@@ -60,7 +61,7 @@
 </main>
 
 <footer>
-    <div class="footer">
+    <div class="index-footer">
         <div class="above">
             <div class="navigation">
                 <h3 class="text-header">Navigation</h3>
