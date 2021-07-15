@@ -8,7 +8,134 @@
 }
 
 body {
+  width: 100vw;
   overflow-x: hidden;
+}
+
+@-webkit-keyframes bottom-fade {
+  0% {
+    -webkit-transform: translateY(10vh);
+            transform: translateY(10vh);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: none;
+            transform: none;
+    opacity: 100;
+  }
+}
+
+@keyframes bottom-fade {
+  0% {
+    -webkit-transform: translateY(10vh);
+            transform: translateY(10vh);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: none;
+            transform: none;
+    opacity: 100;
+  }
+}
+
+@-webkit-keyframes right-fade {
+  0% {
+    -webkit-transform: translateX(10vw);
+            transform: translateX(10vw);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: none;
+            transform: none;
+    opacity: 100;
+  }
+}
+
+@keyframes right-fade {
+  0% {
+    -webkit-transform: translateX(10vw);
+            transform: translateX(10vw);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: none;
+            transform: none;
+    opacity: 100;
+  }
+}
+
+@-webkit-keyframes rotate-grow {
+  0% {
+    -webkit-transform: scale(0) rotate(360deg);
+            transform: scale(0) rotate(360deg);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: none;
+            transform: none;
+    opacity: 100;
+  }
+}
+
+@keyframes rotate-grow {
+  0% {
+    -webkit-transform: scale(0) rotate(360deg);
+            transform: scale(0) rotate(360deg);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: none;
+            transform: none;
+    opacity: 100;
+  }
+}
+
+@-webkit-keyframes shrink-fade {
+  0% {
+    -webkit-transform: scaleX(1.5);
+            transform: scaleX(1.5);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: none;
+            transform: none;
+    opacity: 100;
+  }
+}
+
+@keyframes shrink-fade {
+  0% {
+    -webkit-transform: scaleX(1.5);
+            transform: scaleX(1.5);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: none;
+            transform: none;
+    opacity: 100;
+  }
+}
+
+@-webkit-keyframes up-down {
+  0% {
+    -webkit-transform: translateY(-2vh);
+            transform: translateY(-2vh);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes up-down {
+  0% {
+    -webkit-transform: translateY(-2vh);
+            transform: translateY(-2vh);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
 }
 
 .index-header {
@@ -39,6 +166,8 @@ body {
   border-radius: 100%;
   border: 0.5vh solid #FFFFFF;
   margin-left: 7vw;
+  -webkit-animation: rotate-grow 1s ease-out;
+          animation: rotate-grow 1s ease-out;
 }
 
 .index-header .title__text {
@@ -51,6 +180,8 @@ body {
   margin: 0 1em;
   font-family: 'Roboto', sans-serif;
   font-size: clamp(0.2rem, 2vw, 5rem);
+  -webkit-animation: shrink-fade 1s ease-out;
+          animation: shrink-fade 1s ease-out;
 }
 
 .index-header__navigation ul {
@@ -92,12 +223,21 @@ body {
   background-color: #373737;
   border: none;
   white-space: nowrap;
+  -webkit-transition: 0.2s ease-out;
+  transition: 0.2s ease-out;
 }
 
 .index-header__navigation ul li .nav-link:hover {
   font-weight: 700;
   -webkit-transform: translateY(-0.2em);
           transform: translateY(-0.2em);
+}
+
+.index-header__navigation ul li .nav-link:active {
+  -webkit-transition: 0.1s ease-out;
+  transition: 0.1s ease-out;
+  -webkit-transform: none;
+          transform: none;
 }
 
 .index-header__navigation ul li #home {
@@ -114,10 +254,10 @@ body {
   -ms-flex-line-pack: center;
       align-content: center;
   position: relative;
-  overflow-y: hidden;
+  overflow: hidden;
 }
 
-.welcome .main-bg {
+.welcome .background {
   position: absolute;
   top: 0;
   left: 0;
@@ -126,6 +266,20 @@ body {
   width: 100vw;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.welcome .arrow {
+  bottom: 3vh;
+  left: 50vw;
+  position: absolute;
+  display: inline;
+  width: clamp(1em, 3vw, 5em);
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  -webkit-animation: up-down 0.5s infinite alternate ease-in-out;
+          animation: up-down 0.5s infinite alternate ease-in-out;
+  -webkit-filter: opacity(0.7);
+          filter: opacity(0.7);
 }
 
 .welcome__image {
@@ -145,6 +299,8 @@ body {
   height: -moz-fit-content;
   height: fit-content;
   width: clamp(1em, 20vw, 50em);
+  -webkit-animation: bottom-fade 0.9s ease-in-out;
+          animation: bottom-fade 0.9s ease-in-out;
 }
 
 .welcome__texts {
@@ -161,6 +317,8 @@ body {
   color: #FFFFFF;
   font-size: clamp(1rem, 2vw, 7rem);
   font-family: 'Lato', sans-serif;
+  -webkit-animation: right-fade 1s ease-out;
+          animation: right-fade 1s ease-out;
 }
 
 .welcome__texts .text-default {
@@ -168,9 +326,83 @@ body {
   color: #FFFFFF;
   font-size: clamp(1rem, 2vw, 7rem);
   font-family: 'Lato', sans-serif;
+  -webkit-animation: right-fade 1.1s ease-in;
+          animation: right-fade 1.1s ease-in;
 }
 
 .welcome__texts .highlight {
   color: #FFAA00;
+}
+
+.intro {
+  height: 60vh;
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  overflow: hidden;
+}
+
+.intro__texts {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -ms-flex-preferred-size: 35vw;
+      flex-basis: 35vw;
+  margin-left: 20vw;
+}
+
+.intro__texts .text-header {
+  color: #373737;
+  font-size: clamp(0.8rem, 2vw, 7rem);
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: .2vw;
+  font-weight: 300;
+}
+
+.intro__texts .text-subheader {
+  margin-top: 1em;
+  color: #707070;
+  font-size: clamp(0.6rem, 1.2vw, 7rem);
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  letter-spacing: .1vw;
+  word-spacing: .2vw;
+}
+
+.intro__texts .text-default {
+  margin-top: 1em;
+  color: #707070;
+  font-size: clamp(0.5rem, 0.9vw, 7rem);
+  font-family: 'Lato', sans-serif;
+  word-spacing: .3vw;
+  letter-spacing: .05vw;
+  line-height: clamp(0.5rem, 3.2vh, 6rem);
+}
+
+.intro__texts .highlight {
+  color: #FFAA00;
+}
+
+.intro .python-icon {
+  height: 100%;
+  margin-left: clamp(1em, 5vw, 20em);
+  width: clamp(10em, 20vw, 50em);
+}
+
+.detail {
+  height: 70vh;
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #373737;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  overflow: hidden;
 }
 /*# sourceMappingURL=style.css.map */
