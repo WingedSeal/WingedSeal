@@ -109,7 +109,7 @@
   display: flex;
   -ms-flex-line-pack: center;
       align-content: center;
-  background-image: url("/img/bg-img.jpg");
+  background-image: url("img/bg-img.jpg");
   background-repeat: no-repeat;
   background-size: 100% 100%;
 }
