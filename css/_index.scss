@@ -66,10 +66,17 @@
     width: 100vw;
     display: flex;
     align-content: center;
-    
-    background-image: url('../img/bg-img.jpg');
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
+    position: relative;
+    overflow-y: hidden;
+    .main-bg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        height: 100%;
+        width: 100vw;
+        object-fit: cover;
+    }
     &__image{
         display: flex;
         height: 100%;
