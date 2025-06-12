@@ -44,5 +44,9 @@
 
 # 🔰Experiences
 
-- Neovim
-- Linux (Arch Linux, Debian, Linux Mint)
+- 2 Years of Neovim
+- 3 Years of Linux (Arch Linux)
+- SSH (and setting up Ubuntu server)
+- Adobe Premiere Pro
+- Basic Photoshop
+- Basic Blender
