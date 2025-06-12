@@ -30,6 +30,6 @@
 
 # 📚Tech Stack
 
-| Docker                         | SQLite                         |
-| ------------------------------ | ------------------------------ |
-| ![Docker](./assets/docker.svg) | ![SQLite](./assets/sqlite.svg) |
+| Docker                         | SQLite                         | MySQL                        | MariaDB                          |
+| ------------------------------ | ------------------------------ | ---------------------------- | -------------------------------- |
+| ![Docker](./assets/docker.svg) | ![SQLite](./assets/sqlite.svg) | ![MySQL](./assets/mysql.svg) | ![MariaDB](./assets/mariadb.svg) |
