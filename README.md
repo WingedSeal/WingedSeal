@@ -33,3 +33,16 @@
 | Docker                         | SQLite                         | MySQL                        | MariaDB                          |
 | ------------------------------ | ------------------------------ | ---------------------------- | -------------------------------- |
 | ![Docker](./assets/docker.svg) | ![SQLite](./assets/sqlite.svg) | ![MySQL](./assets/mysql.svg) | ![MariaDB](./assets/mariadb.svg) |
+
+| Svelte/SvelteKit               | React                        | Kivy                       | Godot                        |
+| ------------------------------ | ---------------------------- | -------------------------- | ---------------------------- |
+| ![Svelte](./assets/svelte.svg) | ![React](./assets/react.svg) | ![Kivy](./assets/kivy.svg) | ![Godot](./assets/godot.svg) |
+
+| Tailwind                           | SCSS                       |
+| ---------------------------------- | -------------------------- |
+| ![Tailwind](./assets/tailwind.svg) | ![SCSS](./assets/scss.svg) |
+
+# 🔰Experiences
+
+- Neovim
+- Linux (Arch Linux, Debian, Linux Mint)
